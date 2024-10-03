@@ -1,0 +1,13 @@
+- completed ●Service must parse XML
+  - completed ○ Parse all the Makes from: https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=XML
+  - completed ○ Get all the Vehicle Types per Make: https://vpic.nhtsa.dot.gov/api/vehicles/GetVehicleTypesForMakeId/440?format=xml
+- completed ● Service must produce JSON
+  - completed ○ Combine all the of XML information into a single JSON object
+  - completed ○ Produce an array of objects will all of the information from the XML endpoints
+- completed ● The JSON must look like the following: ○ https://gist.github.com/mbaigbimm/d340e7800d17737482e71c9ad1856f68
+- completed ● Service must save this transformed data into a persistent datastore
+- completed ● Service must expose a single GraphQL endpoint to access the transformed data
+- completed by jest ● Service must contain tests for each data transformation
+- completed ● Service must follow NodeJS best practices for project structure, and code
+- completed ● Service must use TypeScript
+- completed ● Service must by Dockerized
